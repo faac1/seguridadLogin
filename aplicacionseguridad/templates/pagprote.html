@@ -1,0 +1,7 @@
+{% extends 'base_generica.html' %}
+
+{% block content %}
+  <h1>Bienvenido a la página protegida</h1>
+  <p>Solo los usuarios autenticados pueden ver este contenido.</p>
+  <a href="{% url 'logout' %}">Cerrar sesión</a>
+{% endblock %}
