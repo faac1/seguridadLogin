@@ -18,7 +18,7 @@ def registro(request):
             user = form.save()
             login(request, user)
             messages.success(request, 'Te has registrado correctamente!')
-            return redirect('login  ')  # Redirige al home después de registrarse
+            return redirect('login')  # Redirige al home después de registrarse
         else:
             messages.error(request, 'Por favor corrige los errores.')
     else:
